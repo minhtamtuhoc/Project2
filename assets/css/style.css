@@ -21,63 +21,125 @@ a {
 }
 
 /* ====================== header ==================== */
-.header {
-  background: #fff;
-}
-
-.header.fixed {
-  z-index: 1;
-  position: sticky;
-  top: -44px;
-}
-
 .header .body {
-  padding: 52px 0 8px;
   display: flex;
+  padding: 52px 0 8px;
   align-items: center;
 }
-
-.nav {
-  margin-left: auto;
-}
-
 .nav ul {
   display: flex;
 }
-
-.nav a {
-  color: #2f3a3b;
-  padding: 8px 19.5px;
+.nav {
+  margin-left: auto;
 }
-
 .action .action-link:hover,
 .nav a:hover {
-  color: #2f3a3b;
-  /* font-weight: 600; */
+  color: #192122;
   text-shadow: 1px 0 0 currentColor;
 }
-
+.nav a {
+  padding: 8px 19.5px;
+  color: #2f3a3b;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .action .action-link {
-  margin-left: 157.5px;
+  margin-left: 177px;
   color: #494949;
   text-align: center;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
 .action .action-btn {
   margin-left: 24px;
-  display: inline-block;
-  padding: 0 16px;
   min-width: 108px;
-  line-height: 46px;
-  color: #1ebfc1;
-  text-align: center;
-  font-weight: 600;
+  line-height: 48px;
   border-radius: 6px;
   border: 1px solid #1ebfc1;
+  display: inline-block;
+  text-align: center;
+  padding: 0 16px;
 }
-
 .action .action-btn:hover {
-  background: #1ebfc1;
   color: white;
+  background: #1ebfc1;
   transition: 0.3s;
+}
+/* ===================================HERO=========================== */
+.btn:hover {
+  opacity: 0.9;
+}
+.hero {
+  padding: 49px 0 79px;
+}
+.hero .body {
+  display: flex;
+}
+.hero .content-blog {
+  width: 50%;
+}
+.hero .content-blog .top-tilte {
+  margin-top: 93px;
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.hero .content-blog .title {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.hero .content-blog .desc {
+  margin-top: 46px;
+  width: 374px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.77;
+}
+/* Chỉnh cho "world-class platform" nằm dưới */
+.hero .content-blog .desc-span {
+  display: inline-block;
+}
+.hero .cta-group {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+}
+.hero .cta-group .btn {
+  width: 186px;
+  line-height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0 41px;
+  display: inline-block;
+}
+.hero .cta-group .play-video {
+  margin-left: 50px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .cta-group .play-video:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
